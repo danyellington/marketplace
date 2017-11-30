@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/gallery-styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row jumbotron">
+        <div class="col-md-7">
+           <div class="row">
+             <div class="img-fluid" alt="Responsive image">
+               <img src="img/picture.jpeg">
+             </div>
+           </div>
+        </div>
+        <div class="col-md-5">
+          <div class="page-header">
+            <h1 class="main-title">My<small>Jewelry</small></h1>
+          </div>
+          <div class="panel-group">
+            <button id="" class="btn btn-default" id="makeOrder-btn">Make an order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel">
+              <h1 class="panel-title productName">Bracelet</h1>
+            </div>
+            <img src="img/bracelet.jpeg"  class="hover-shadow">
+          </div>
+          <div class="col-md-4">
+            <div class="panel">
+              <h1 class="panel-title productName">Necklace</h1>
+            </div>
+            <img src="img/necklace.jpeg"  class="hover-shadow">
+          </div>
+          <div class="col-md-4">
+            <div class="panel">
+              <h1 class="panel-title productName">Earrings</h1>
+            </div>
+            <img src="img/earrings.jpeg"  class="hover-shadow">
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-info" id="registerForm">
+        <div class="panel-heading">
+          <h1 class="panel-title">Fill out your information</h1>
+        </div>
+        <div class="panel-body">
+
+          <form id="orderForm">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="">
+                    <h4>Full name:</h4>
+                  </div>
+                  <input id="fullName" class="form-control" type="text">
+                </div>
+                <div class="col-md-3">
+                  <div class="">
+                    <h4>Address:</h4>
+                  </div>
+                  <input id="address" class="form-control" type="text">
+                </div>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" name="product" value="bracelet" checked>
+                  Bracelet
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="product" value="necklace">
+                  Necklace
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="product" value="earrings">
+                  Earrings
+                </label>
+              </div>
+
+              <div class="row">
+                <div class="panel">
+                  <div class="col-md-2">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </form>
+      <div><p>this is the receipt: <span class="receipt"></span></p></div>
+   </div>
+  </div>
+</div>
+</body>
+</html>
